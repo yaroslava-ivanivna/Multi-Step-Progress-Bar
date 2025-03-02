@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/Multi-Step-Progress-Bar
-/",
+    "build":  "vite build --base=/Multi-Step-Progress-Bar/",
     "preview": "vite preview"
   },
   "devDependencies": {
