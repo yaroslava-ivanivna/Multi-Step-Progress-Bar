@@ -4,20 +4,50 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>multi-step-progress-bar</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-
     <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+      <div class="container">
+        <div class="steps">
+          <span class="circle active">
+            <svg class="icon-svg active-icon">
+              <use xlink:href="./img/sprite.svg#tick-svgrepo-com"></use>
+            </svg>
+          </span>
+          <span class="circle">
+            <svg class="icon-svg">
+              <use xlink:href="./img/sprite.svg#cross-svgrepo-com"></use>
+            </svg>
+          </span>
+          <span class="circle">
+            <svg class="icon-svg">
+              <use xlink:href="./img/sprite.svg#cross-svgrepo-com"></use>
+            </svg>
+          </span>
+          <span class="circle">
+            <svg class="icon-svg">
+              <use xlink:href="./img/sprite.svg#cross-svgrepo-com"></use>
+            </svg>
+          </span>
+          <span class="circle">
+            <svg class="icon-svg">
+              <use xlink:href="./img/sprite.svg#cross-svgrepo-com"></use>
+            </svg>
+          </span>
+          <div class="progress-bar">
+            <span class="indicator"></span>
+          </div>
+        </div>
+
+        <div class="progress-bar-btns">
+          <button class="button" id="prev" disabled type="button">Prev</button>
+          <button class="button" id="next" type="button">Next</button>
+        </div>
+      </div>
     </main>
 
-    <load src="./partials/footer.html" />
-
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="./main.js" defer></script>
   </body>
 </html>
